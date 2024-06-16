@@ -24,7 +24,9 @@ const openai = new OpenAI({
 });
 
 export async function generatePrompt(messages: Message[]) {
+  console.log("loading prompt...");
   const data = { model: config.model, messages: messages };
   const res = await openai.chat.completions.create(data);
+  console.log("...done.");
   return res.choices[0].message.content;
 }
