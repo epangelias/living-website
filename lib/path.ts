@@ -32,7 +32,7 @@ const makePrompt = (
   It will in HTML that will be inserted in the body tag.
   MAKE THE SITE AS CREATIVE AND COMPLEX AS POSSIBLE
   Utilize tailwind for styling with elegant and modern design using the full features of Tailwind CSS.
-  Colors, shadows, boxes, borders, and more should be included for the page. Include a header, footer, main content, related links, ads, and a sidebar.
+  Colors, shadows, boxes, borders, and more should be included for the page. Include a header, footer, main content, related links, and a sidebar.
   Include vibrant colors for each component of the page.
   Include Emojis as icons for the page UI.
   Include links to related internal pages.
