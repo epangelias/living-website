@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+a:not(#important) {
+    color: LinkText;
+    cursor: pointer;
+    padding: 1rem;
+
+    &:hover,
+    &:focus-visible {
+        color: ActiveText;
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: VisitedText;
+    }
+}
+
+main {
+    padding: 2rem;
+}
+
+html {
+    /* filter: invert(1) hue-rotate(180deg); */
+}
