@@ -23,6 +23,10 @@ main {
     padding: 2rem;
 }
 
+button {
+    /* margin: 5rem 0 !important; */
+}
+
 html {
     /* filter: invert(1) hue-rotate(180deg); */
 }

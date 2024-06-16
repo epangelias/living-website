@@ -16,9 +16,13 @@ export async function GetPages() {
 }
 
 export async function PageGenerator(path: string) {
-  const html = await generatePrompt(makePrompt(path));
-  await db.set(["pages", path], html);
-  return html;
+  try {
+    const html = await generatePrompt(makePrompt(path));
+    await db.set(["pages", path], html);
+    return html;
+  } catch (e) {
+    return "Error generating page. API rate limit likely reached.";
+  }
 }
 
 const makePrompt = (
