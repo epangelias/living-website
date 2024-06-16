@@ -7,7 +7,10 @@ export async function handler(req: Request) {
   pages.forEach((page) => {
     if (
       page.path.toLowerCase().includes("herman") ||
-      page.path.toLowerCase().includes("jaden")
+      page.path.toLowerCase().includes("jaden") ||
+      page.path.toLowerCase().includes("dan") ||
+      page.path.toLowerCase().includes("gay") ||
+      page.path.toLowerCase().includes("jesus")
     ) db.delete(["pages", page.path]);
     console.log(page.path);
   });
